@@ -1,0 +1,83 @@
+:root {
+  --bg-color: #bacddb;
+  --item-bg-color: #ffffff;
+  --prime-color: #3fa796;
+  --secondary-bg-color: #898176;
+  --secondary-color: #a03472;
+  --item-text-color: #6c7156;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Titillium Web", sans-serif;
+}
+
+body {
+  background-color: var(--bg-color);
+  max-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  display: flex;
+  padding: 0 5rem;
+  gap: 1rem;
+  overflow: scroll;
+  height: 100%;
+  min-height: 0;
+  padding-top: 1rem;
+}
+.list {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+  width: 20rem;
+  min-width: 25rem;
+  overflow: visible;
+  gap: 0.5rem;
+  overflow: scroll;
+  padding-bottom: 3rem;
+  position: relative;
+}
+
+.list h2 {
+  font-size: 1.2rem;
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+  color: var(--item-text-color);
+  text-transform: capitalize;
+  position: sticky;
+  top: 0;
+  background-color: var(--bg-color);
+  z-index: 2;
+}
+
+.item {
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--item-bg-color);
+  border-radius: 0.2rem;
+  color: var(--item-text-color);
+  box-shadow: 0 2px 4px 0 rgb(0 0 0 / 40%);
+  cursor: grab;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.item-title {
+  position: relative;
+  font-weight: 700;
+  z-index: 1;
+}
+
+.item-price {
+  color: var(--prime-color);
+}
