@@ -1,11 +1,11 @@
-:root {
+/* :root {
   --bg-color: #bacddb;
   --item-bg-color: #ffffff;
   --prime-color: #3fa796;
   --secondary-bg-color: #898176;
   --secondary-color: #a03472;
   --item-text-color: #6c7156;
-}
+} */
 
 * {
   padding: 0;
@@ -34,6 +34,7 @@ body {
   min-height: 0;
   padding-top: 1rem;
 }
+
 .list {
   display: flex;
   flex-direction: column;
@@ -80,4 +81,15 @@ body {
 
 .item-price {
   color: var(--prime-color);
+}
+
+.theme-button {
+  position: absolute;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 1rem;
+  background-color: var(--prime-color);
+  border: none;
+  color: var(--item-text-color);
+  z-index: 9;
 }
